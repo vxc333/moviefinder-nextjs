@@ -1,31 +1,9 @@
 "use client";
 
 import CardMovie from "@/components/CardMovie";
+import SearchBox from "@/components/SearchBox";
 import { useEffect, useState } from "react";
-
-interface Movie {
-  Title: string;
-  Year: number; // Alterei para string para corresponder ao formato típico da API OMDb
-  Rated: string;
-  Released: string;
-  Runtime: string;
-  Genre: string;
-  Director: string;
-  Writer: string;
-  Actors: string;
-  Plot: string;
-  Language: string;
-  Country: string;
-  Awards: string;
-  Poster: string;
-  Rating: Array<{ Source: string; Value: string }>;
-  imdbID: string;
-  Type: string;
-  DVD: string;
-  BoxOffice: string;
-  Production: string;
-  Website: string;
-}
+import { Movie } from "@/model/Movie";
 
 export default function SearchPage({
   params: { searchTerm },
@@ -54,21 +32,24 @@ export default function SearchPage({
   }, [searchTerm]);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {loading ? (
-        <p>Loading...</p>
-      ) : data.length > 0 ? (
-        data.map((movie) => (
-          <CardMovie
-            key={movie.imdbID}
-            poster={movie.Poster}
-            title={movie.Title}
-            year={movie.Year}
-          />
-        ))
-      ) : (
-        <p>Filme não encontrado...</p>
-      )}
-    </div>
+    <>
+      <SearchBox />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {loading ? (
+          <p>Loading...</p>
+        ) : data.length > 0 ? (
+          data.map((movie) => (
+            <CardMovie
+              key={movie.imdbID}
+              poster={movie.Poster}
+              title={movie.Title}
+              year={movie.Year}
+            />
+          ))
+        ) : (
+          <p>Filme não encontrado...</p>
+        )}
+      </div>
+    </>
   );
 }

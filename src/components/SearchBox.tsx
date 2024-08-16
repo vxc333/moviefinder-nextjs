@@ -14,8 +14,18 @@ export default function SearchBox() {
   };
   return (
     <form className="p-3 max-w-6xl mx-auto flex gap-4" onSubmit={handleSubmit}>
-      <Input className="rounded-xl" onChange={(e) => setSearch(e.target.value)} placeholder="Digite o nome do filme..."/>
-      <Button className="rounded-xl" variant={"outline"} disabled={search === ""}>Pesquisar</Button>
+      <Input
+        className="rounded-xl"
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder="Digite o nome do filme..."
+      />
+      <Button
+        className="rounded-xl"
+        variant={"outline"}
+        disabled={search === ""}
+      >
+        Pesquisar
+      </Button>
     </form>
   );
 }

@@ -1,12 +1,9 @@
-import NavBar from "@/components/NavBar";
-const API_KEY = process.env.API_KEY;
+import SearchBox from "@/components/SearchBox";
 
-export default async function Home(searchParams : string) {
-
-  
-  const res = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&`)
-
-  return <div> 
-    
-  </div>;
+export default function Home() {
+  return (
+    <div>
+      <SearchBox />
+    </div>
+  );
 }
