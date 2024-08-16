@@ -11,7 +11,7 @@ export default function MenuItem({ title, address, Icon }: MenuItemProps) {
   return (
     <Link href={address} className="hover:text-slate-600">
       <Icon className="text-xl sm:hidden"/>
-      <p className="hidden sm:inline text-sm">{title}</p>
+      <p className="hidden sm:inline text-base">{title}</p>
     </Link>
   );
 }
