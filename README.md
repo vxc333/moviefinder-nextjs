@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Movie Finder
 
-First, run the development server:
+Movie Finder é uma aplicação web desenvolvida com Next.js, que permite aos usuários buscar informações sobre filmes utilizando a API OMDb. A aplicação exibe detalhes como título, ano de lançamento, gênero, diretor, e muito mais.
+
+## Sumário
+
+- Pré-requisitos
+- Instalação
+- Configuração
+- Execução
+- Scripts Disponíveis
+- Tecnologias Utilizadas
+- Licença
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
+
+- **Node.js** (versão 14.x ou superior)
+- **npm** (gerenciador de pacotes do Node.js) ou **yarn** ou **pnpm** ou **bun**
+- **API Key** para a [OMDb API](http://www.omdbapi.com/apikey.aspx) (Nesse caso, já deixei cadastrado a minha chave, para facilitar a avaliação.)
+
+## Instalação
+
+Clone o repositório para sua máquina local e instale as dependências:
+
+```bash
+git clone https://github.com/seu-usuario/movie-finder.git
+cd movie-finder
+npm install
+```
+
+ou, caso utilize **yarn**:
+
+```bash
+yarn install
+```
+
+ou, caso utilize **pnpm**:
+
+```bash
+pnpm install
+```
+
+ou, caso utilize **bun**:
+
+```bash
+bun install
+```
+
+
+## Execução
+
+Após a instalação e configuração, você pode iniciar o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+```
+
+ou
+
+```bash
 yarn dev
-# or
+```
+
+ou
+
+```bash
 pnpm dev
-# or
+```
+
+ou
+
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação em execução.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts Disponíveis
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **`npm run dev`**: Inicia o servidor de desenvolvimento.
+- **`npm run build`**: Compila a aplicação para produção.
+- **`npm run start`**: Inicia o servidor em modo de produção.
+- **`npm run lint`**: Executa o ESLint para verificar o código em busca de problemas.
 
-## Learn More
+## Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js**: Framework React para renderização no lado do servidor e geração de páginas estáticas.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Tailwind CSS**: Framework CSS utilitário para construção de layouts responsivos.
+- **OMDb API**: API utilizada para buscar informações detalhadas sobre filmes.
+- **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática opcional.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
