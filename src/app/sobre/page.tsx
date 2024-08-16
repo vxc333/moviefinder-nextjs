@@ -16,8 +16,7 @@ export default function About() {
           Bem-vindo ao MovieFinder, sua ferramenta definitiva para descobrir e
           explorar filmes de todos os gêneros e épocas.
           <br /> Desenvolvida com a mais recente tecnologia web, nossa aplicação
-          permite que você busque por filmes, visualize detalhes completos e
-          organize uma lista personalizada dos seus favoritos.
+          permite que você busque por filmes e visualize detalhes completos.
         </p>
       </div>
       <div>
@@ -44,11 +43,7 @@ export default function About() {
             Veja informações detalhadas sobre cada filme, incluindo sinopse,
             elenco, diretor, ano de lançamento e muito mais.
           </li>
-          <li>
-            <p>Lista de Favoritos: </p>
-            Salve seus filmes preferidos em uma lista de favoritos para acessar
-            a qualquer momento.
-          </li>
+          
         </ul>
       </div>
       <div>

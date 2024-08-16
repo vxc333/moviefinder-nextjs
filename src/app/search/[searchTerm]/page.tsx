@@ -34,7 +34,7 @@ export default function SearchPage({
   return (
     <>
       <SearchBox />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-3 max-w-6xl mx-auto">
         {loading ? (
           <p>Loading...</p>
         ) : data.length > 0 ? (
